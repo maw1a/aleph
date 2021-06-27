@@ -5,9 +5,9 @@ import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="container mx-auto">
+    <div className="w-screen">
       <Head>
-        <title>Aleph | Knowledge without barriers</title>
+        <title>Aleph</title>
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
