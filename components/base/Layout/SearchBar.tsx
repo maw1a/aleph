@@ -10,28 +10,30 @@ const SearchBar: FC<SearchBarProps> = (props) => {
   const [open, setOpen] = React.useState<boolean>(false);
   const inputRef = React.useRef<HTMLInputElement>(null);
 
+  React.useEffect(() => {
+    if (open) {
+      inputRef.current?.focus();
+    } else {
+      inputRef.current?.blur();
+    }
+  }, [open]);
+
   return (
     <div className="inline-flex rounded-full justify-end">
       <Button
         icon={true}
         className="focus:outline-none"
-        onClick={() => {
-          setOpen(!open);
-          // if (document.activeElement === inputRef.current) {
-          //   inputRef.current?.blur();
-          // } else {
-          //   inputRef.current?.focus();
-          // }
-        }}
+        onClick={() => setOpen(!open)}
       >
         <Search className="h-5" fill="rgb(117,117,117)" />
       </Button>
       <input
         ref={inputRef}
-        type="search"
+        type="text"
         placeholder="Search Aleph"
+        onBlur={() => setOpen(false)}
         className={
-          "focus:outline-none font-sans text-lg rounded-r-full transition-all duration-500 " +
+          "outline-none font-sans text-lg rounded-r-full transition-all duration-500 " +
           (open ? "w-full" : "w-0")
         }
       />
