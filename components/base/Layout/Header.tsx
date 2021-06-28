@@ -1,7 +1,6 @@
 import React, { FC } from "react";
-import Image from "next/image";
-import Button from "../Button";
-import Logo from "./Logo";
+import SearchBar from "./SearchBar";
+import Logo from "../../../icons/Logo";
 
 const Header: FC<any> = (props) => {
   return (
@@ -12,7 +11,7 @@ const Header: FC<any> = (props) => {
             <Logo className="h-12"/>
           </div>
           <div className="inline-flex">
-            <Button>Upgrade</Button>
+            <SearchBar />
           </div>
         </div>
       </div>

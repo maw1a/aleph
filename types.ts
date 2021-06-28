@@ -5,5 +5,12 @@ export interface LayoutProps {
 };
 
 export interface ButtonProps {
-  onCLick?: React.MouseEventHandler<HTMLButtonElement>;
+  className?: string;
+  icon?: true | false;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+};
+
+export interface IconProps {
+  className?: string;
+  fill?: string;
 };
