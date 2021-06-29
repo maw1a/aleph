@@ -1,12 +1,14 @@
 import React, { FC } from "react";
 import Layout from "../components/base/Layout/Layout";
 
-const Home: FC<any> = (props) => {
+import Home from "../components/pages/Home";
+
+const HomePage: FC<any> = (props) => {
   return (
     <Layout pageProps={props}>
-      <p> Index.js </p>
+      <Home />
     </Layout>
   );
 };
 
-export default Home;
+export default HomePage;
