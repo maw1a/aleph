@@ -28,7 +28,11 @@ const Header: FC<any> = (props) => {
 							</div>
 						) : (
 							<div className='flex'>
-								<Button className='focus:outline-none'>Login</Button>
+								<Button
+									className='focus:outline-none'
+									onClick={() => setLogged(true)}>
+									Login
+								</Button>
 								<Button className='bg-black text-white rounded-full px-5'>
 									Sign up
 								</Button>
