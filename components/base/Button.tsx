@@ -10,7 +10,11 @@ const Button: FC<ButtonProps> = ({
 	return (
 		<button
 			onClick={onClick}
-			className={(icon ? "rounded-full" : "") + " p-2 mx-1 " + className}>
+			className={
+				(icon ? "rounded-full" : "") +
+				" focus:outline-none p-2 mx-1 " +
+				className
+			}>
 			{children}
 		</button>
 	);
