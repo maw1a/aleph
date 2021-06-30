@@ -6,7 +6,7 @@ import Button from "../Button";
 const Header: FC<any> = (props) => {
 	const [isLogged, setLogged] = React.useState(false);
 	return (
-		<nav className='shadow-md'>
+		<nav className='shadow-md px-4'>
 			<div className='container mx-auto px-2 py-3'>
 				<div className='w-100 flex items-center justify-between'>
 					<div className='inline-flex'>

@@ -7,7 +7,7 @@ const Layout: FC<Props> = (props) => {
 	return (
 		<div className='w-full h-full'>
 			<Header />
-			<div className='container mx-auto'>{props.children}</div>
+			<div className='container mx-auto px-4 my-4'>{props.children}</div>
 			<Footer />
 		</div>
 	);
