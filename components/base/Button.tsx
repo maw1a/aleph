@@ -11,8 +11,8 @@ const Button: FC<ButtonProps> = ({
 		<button
 			onClick={onClick}
 			className={
-				(icon ? "rounded-full" : "") +
-				" focus:outline-none p-2 mx-1 " +
+				(icon ? "rounded-full" : "px-3") +
+				" focus:outline-none p-2 mx-1 flex flex-row " +
 				className
 			}>
 			{children}
