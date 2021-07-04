@@ -22,3 +22,11 @@ export interface TextSubtextProps {
 	subtext?: string;
 	subtextClassName?: string;
 }
+
+export interface ModalBaseProps {
+	onClose: Function;
+	open: boolean;
+	onSuccess?: Function;
+	modalClassName?: string;
+	title?: string;
+}
