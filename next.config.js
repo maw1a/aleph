@@ -8,6 +8,7 @@ module.exports = (phase, { defaultConfig }) => {
         GOOGLE_ID:
           "260739877421-ulvsavv09o1mo9kh3k039ml2kbnvpfph.apps.googleusercontent.com",
         GOOGLE_SECRET: "lAUs3g7xY5WIPJ66vUacdS7d",
+        JWT_SECRET: "IkphdmFJblVzZSIsImV4cCI6MTYyNTQ5ODQ3OSwi",
       },
     };
   }
@@ -19,6 +20,7 @@ module.exports = (phase, { defaultConfig }) => {
         "260739877421-ulvsavv09o1mo9kh3k039ml2kbnvpfph.apps.googleusercontent.com",
       GOOGLE_SECRET: "lAUs3g7xY5WIPJ66vUacdS7d",
       NEXTAUTH_URL: "",
+      JWT_SECRET: "IkphdmFJblVzZSIsImV4cCI6MTYyNTQ5ODQ3OSwi",
     },
   };
 };
