@@ -46,6 +46,7 @@ const Header: FC<any> = (props) => {
                         <Button
                           className="text-gray-700 block px-4 py-2 text-sm"
                           onClick={() => signOut()}
+                          fullWidth
                         >
                           Sign out
                         </Button>
