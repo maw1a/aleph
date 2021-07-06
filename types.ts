@@ -8,6 +8,7 @@ export interface ButtonProps {
   className?: string;
   icon?: true | false;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  fullWidth?: true;
 }
 
 export interface IconProps {
