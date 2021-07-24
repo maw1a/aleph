@@ -5,5 +5,19 @@
 
 body,
 * {
-	font-family: "Poppins";
+  font-family: "Poppins";
+}
+.clamp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.clamp-line-2 {
+  -webkit-line-clamp: 2;
+}
+
+.clamp-line-4 {
+  -webkit-line-clamp: 4;
 }
