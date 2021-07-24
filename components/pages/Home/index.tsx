@@ -1,10 +1,12 @@
 import React, { FC } from "react";
-import CarouselCard from "./CarouselCard";
+import Carousel from "./Carousel";
+// mock data
+import { items } from "../../data/items.json";
 
 const Home: FC<any> = (props) => {
   return (
     <React.Fragment>
-      <CarouselCard />
+      <Carousel items={items} />
     </React.Fragment>
   );
 };
